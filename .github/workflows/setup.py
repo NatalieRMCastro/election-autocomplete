@@ -14,7 +14,7 @@ from setuptools import find_packages, setup, Command
 # Package meta-data.
 NAME = 'autocomplete 2024 wrapper'
 DESCRIPTION = 'Application of "suggests" library to extract autocomplete query information during the 2024 election season.'
-URL = 'https://github.com/NatalieRMCastro/election-autocomplete'
+URL = 'https://github.com/NatalieRMCastro/election-autocomplete/.github/workflows/setup.py'
 EMAIL = 'natalie.castro@colorado.edu'
 AUTHOR = 'Natalie Castro'
 REQUIRES_PYTHON = '>=3.6.0'
