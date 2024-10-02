@@ -20,3 +20,12 @@ jobs:
         pip install pandas
         if [-f requirements.text]; then pip install -r requirements.txt; fi
         pip install -e. 
+      -name: Identify queries 
+      run: |
+        python-c"
+        with open('queries.txt','r') as file:
+          queries_f = file.read()
+        queries_split = queries_f.split("\n")
+        for query in queries_split:
+          print(query)
+          "
