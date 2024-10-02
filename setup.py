@@ -12,7 +12,7 @@ from shutil import rmtree
 from setuptools import find_packages, setup, Command
 
 # Package meta-data.
-NAME = 'autocomplete 2024 wrapper'
+NAME = 'autocomplete-2024-wrapper'
 DESCRIPTION = 'Application of "suggests" library to extract autocomplete query information during the 2024 election season.'
 URL = 'https://github.com/NatalieRMCastro/election-autocomplete/setup.py'
 EMAIL = 'natalie.castro@colorado.edu'
@@ -98,9 +98,7 @@ setup(
     author_email=EMAIL,
     python_requires=REQUIRES_PYTHON,
     url=URL,
-    packages=find_packages(exclude=["tests", "*.tests", "*.tests.*", "tests.*"]),
-    # If your package is a single module, use this instead of 'packages':
-    # py_modules=['mypackage'],
+    py_modules=['autocomplete-2024-wrapper'],
 
     # entry_points={
     #     'console_scripts': ['mycli=mymodule:cli'],
