@@ -25,8 +25,8 @@ jobs:
            
       - name: Pull suggests from Google 
         run: |
-          # python main.py
-          touch hello.txt
+          python main.py
+          
       - name: commit
         run: |
           # Stage the file, commit and push
