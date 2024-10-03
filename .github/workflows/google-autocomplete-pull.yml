@@ -35,3 +35,6 @@ jobs:
           git add *
           git commit -m "completed pull for `date +'%Y-%m-%d'`" || exit 0
           git push
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    
