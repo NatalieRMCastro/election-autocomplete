@@ -43,18 +43,7 @@ def main():
     daily_pulls = []
     daily_suggests = []
 
-        ## delete testing
-    df = pd.DataFrame({'num_legs': [2, 4, 8, 0],
-                   'num_wings': [2, 0, 0, 0],
-                   'num_specimen_seen': [10, 2, 1, 8]},
-                  index=['falcon', 'dog', 'spider', 'fish'])
-
-    curr_date = strftime("%Y-%m-%d", gmtime())
-    
-    df.to_csv(f'{curr_date}-autocomplete.csv')
-
-    return
-
+       
     ## Iterating through each seed query, assigning a variable to the seed
     for seed in queries[0:1]:
         ## generating the suggests item
