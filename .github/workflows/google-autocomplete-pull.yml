@@ -23,13 +23,15 @@ jobs:
            
       - name: Pull suggests from Google 
         run: |
-          python main.py
+          # python main.py
+          touch hello.txt
       - name: commit
         run: |
           # Stage the file, commit and push
           git config user.email "naca4005@colorado.edu"
           git config user.name "NatalieRMCastro"
           git pull
+          git checkout main
           git add *
           git commit -m "completed pull for `date +'%Y-%m-%d'`" || exit 0
           git push
