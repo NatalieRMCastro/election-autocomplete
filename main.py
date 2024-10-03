@@ -68,6 +68,5 @@ def main():
     df.to_csv('test.csv')
 
 
-
-if__name__=="__main__":
+if __name__=="__main__":
     main()
