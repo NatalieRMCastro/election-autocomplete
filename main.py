@@ -1,5 +1,6 @@
 import pandas as pd
 import suggests
+from time import sleep
 
 def main():
     queries = ['democrat',
