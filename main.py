@@ -5,47 +5,14 @@ from time import sleep
 
 
 def main():
-    queries = ['democrat',
-     'democrats',
-     'election',
-     'election candidates',
-     'election coverage',
-     'election date',
-     'election day',
-     'election issues',
-     'election news',
-     'election polls',
-     'election predictions',
-     'election time',
-     'election updates',
-     'elections',
-     'how to register',
-     'how to register to vote',
-     'how to vote',
-     'local election',
-     'poll results',
-     'polls',
-     'primaries',
-     'realclearpolitics',
-     'republican',
-     'republicans',
-     'sample ballot',
-     'federal election',
-     'voter registration',
-     'voting',
-     'voting locations',
-     'when is the election',
-     'where can I vote',
-     'where do I vote',
-     'where to vote',
-     "who's running"]
+    queries = ['democrat','democrats','election','election candidates','election coverage','election date', 'election day','election issues','election news','election polls','election predictions','election time','election updates','elections','how to register','how to register to vote','how to vote','local election','poll results','polls','primaries','realclearpolitics','republican','republicans','sample ballot','federal election','voter registration','voting','voting locations','when is the election','where can I vote','where do I vote','where to vote',"who's running"]
 
     daily_pulls = []
     daily_suggests = []
 
        
     ## Iterating through each seed query, assigning a variable to the seed
-    for seed in queries[0:1]:
+    for seed in queries:
         ## generating the suggests item
         s = suggests.get_suggests(seed, source='google')
         suggestion = {seed:s['suggests']}
